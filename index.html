@@ -3,134 +3,279 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Vanessa Cristina | Expert em Perícias</title>
+
+<meta name="description" content="Vanessa Cristina - Expert em Perícias Grafotécnicas e Documentoscopia em Blumenau/SC. Atendimento judicial e extrajudicial.">
 
 <style>
 * {
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    color: #222;
-    background: #f8f7f4;
-    line-height: 1.6;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #263238;
+    background: #f7f5f0;
+    line-height: 1.7;
 }
 
 header {
-    background: #182b3a;
+    background: #102a43;
     color: white;
-    padding: 25px 8%;
+    padding: 18px 7%;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.15);
 }
 
 .logo {
     font-size: 22px;
     font-weight: bold;
+    letter-spacing: 0.5px;
 }
 
 nav a {
     color: white;
     text-decoration: none;
-    margin-left: 20px;
+    margin-left: 24px;
+    font-size: 15px;
+}
+
+nav a:hover {
+    color: #d4b46a;
 }
 
 .hero {
-    background: linear-gradient(135deg, #182b3a, #31556b);
+    background:
+        linear-gradient(rgba(16,42,67,0.94), rgba(25,62,88,0.94));
     color: white;
     text-align: center;
-    padding: 90px 20px;
+    padding: 110px 20px 100px;
 }
 
-.hero h1 {
-    font-size: 42px;
+.hero .tag {
+    color: #d4b46a;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
     margin-bottom: 15px;
 }
 
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 12px;
+}
+
+.hero h2 {
+    font-size: 23px;
+    font-weight: normal;
+    margin-bottom: 12px;
+}
+
 .hero p {
-    font-size: 20px;
-    max-width: 700px;
-    margin: auto;
+    font-size: 17px;
+    color: #e6edf2;
 }
 
 .botao {
     display: inline-block;
     margin-top: 30px;
-    padding: 14px 28px;
-    background: #25d366;
-    color: white;
+    padding: 15px 30px;
+    background: #c9a95c;
+    color: #102a43;
     text-decoration: none;
-    border-radius: 30px;
+    border-radius: 5px;
     font-weight: bold;
+    transition: 0.3s;
+}
+
+.botao:hover {
+    background: #e0c47c;
+    transform: translateY(-2px);
 }
 
 section {
-    padding: 60px 8%;
-    max-width: 1100px;
-    margin: auto;
+    padding: 75px 8%;
 }
 
-h2 {
-    color: #182b3a;
+.titulo {
     text-align: center;
-    margin-bottom: 30px;
-    font-size: 30px;
+    margin-bottom: 45px;
+}
+
+.titulo span {
+    color: #c09b4d;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+.titulo h2 {
+    color: #102a43;
+    font-size: 32px;
+    margin-top: 8px;
 }
 
 .sobre {
-    text-align: center;
-    max-width: 800px;
+    max-width: 850px;
     margin: auto;
+    text-align: center;
+    font-size: 17px;
 }
 
-.servicos {
+.destaques {
+    background: white;
+}
+
+.cards {
+    max-width: 1100px;
+    margin: auto;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-    gap: 20px;
+    gap: 24px;
 }
 
 .card {
-    background: white;
-    padding: 30px;
-    border-radius: 12px;
-    box-shadow: 0 3px 15px rgba(0,0,0,0.08);
+    background: #ffffff;
+    padding: 32px 25px;
+    border-radius: 8px;
+    border-top: 4px solid #c9a95c;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.07);
 }
 
 .card h3 {
-    color: #31556b;
+    color: #102a43;
+    margin-bottom: 12px;
+    font-size: 20px;
+}
+
+.card p {
+    color: #5b6770;
+    font-size: 15px;
+}
+
+.numero {
+    font-size: 30px;
+    color: #c09b4d;
+    font-weight: bold;
     margin-bottom: 10px;
+}
+
+.como-funciona {
+    background: #102a43;
+    color: white;
+}
+
+.como-funciona .titulo h2 {
+    color: white;
+}
+
+.etapas {
+    max-width: 1000px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+}
+
+.etapa {
+    text-align: center;
+    padding: 20px;
+}
+
+.etapa h3 {
+    margin-bottom: 10px;
+    color: #d4b46a;
+}
+
+.etapa p {
+    color: #dce5eb;
+    font-size: 15px;
 }
 
 .contato {
     text-align: center;
-    background: #e9ecef;
-    max-width: none;
+    background: #f0ede6;
+}
+
+.contato p {
+    margin-bottom: 8px;
+}
+
+.whatsapp-fixo {
+    position: fixed;
+    right: 22px;
+    bottom: 22px;
+    width: 58px;
+    height: 58px;
+    background: #25d366;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: bold;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.25);
+    z-index: 2000;
 }
 
 footer {
-    background: #182b3a;
-    color: white;
+    background: #0b1f33;
+    color: #dce5eb;
     text-align: center;
-    padding: 25px;
+    padding: 30px 20px;
     font-size: 14px;
 }
 
+footer strong {
+    color: white;
+}
+
 @media (max-width: 700px) {
+
     header {
         flex-direction: column;
-        gap: 15px;
+        gap: 12px;
     }
 
     nav a {
-        margin: 0 8px;
+        margin: 0 7px;
+        font-size: 13px;
+    }
+
+    .hero {
+        padding: 80px 20px;
     }
 
     .hero h1 {
-        font-size: 32px;
+        font-size: 36px;
+    }
+
+    .hero h2 {
+        font-size: 19px;
+    }
+
+    section {
+        padding: 55px 6%;
+    }
+
+    .titulo h2 {
+        font-size: 27px;
     }
 }
 </style>
@@ -139,97 +284,228 @@ footer {
 <body>
 
 <header>
-    <div class="logo">Vanessa Cristina</div>
+
+    <div class="logo">
+        Vanessa Cristina
+    </div>
+
     <nav>
         <a href="#sobre">Sobre</a>
         <a href="#servicos">Serviços</a>
+        <a href="#como">Como funciona</a>
         <a href="#contato">Contato</a>
     </nav>
+
 </header>
 
-<section class="hero">
-    <h1>Vanessa Cristina</h1>
-    <p>Expert em Perícias Grafotécnicas e Documentoscopia</p>
-    <p>Atendimento em Blumenau/SC</p>
 
-    <a class="botao" href="https://wa.me/5547992453167" target="_blank">
-        Fale comigo pelo WhatsApp
+<section class="hero">
+
+    <div class="tag">
+        Perícia Técnica
+    </div>
+
+    <h1>Vanessa Cristina</h1>
+
+    <h2>Expert em Perícias Grafotécnicas e Documentoscopia</h2>
+
+    <p>Atendimento em Blumenau/SC e região</p>
+
+    <a class="botao"
+       href="https://wa.me/5547992453167"
+       target="_blank">
+        Solicitar atendimento pelo WhatsApp
     </a>
+
 </section>
+
 
 <section id="sobre">
-    <h2>Sobre</h2>
-    <div class="sobre">
-        <p>
-            Atuação profissional em perícias grafotécnicas e documentoscopia,
-            com análise técnica de assinaturas, escritas e documentos.
-        </p>
-        <br>
-        <p>
-            Atendimento para pessoas físicas, empresas e demandas judiciais
-            e extrajudiciais.
-        </p>
+
+    <div class="titulo">
+        <span>Conheça o trabalho</span>
+        <h2>Sobre a atuação profissional</h2>
     </div>
+
+    <div class="sobre">
+
+        <p>
+            Atuação especializada em <strong>Perícia Grafotécnica e Documentoscopia</strong>,
+            com análise técnica de escritas, assinaturas e documentos.
+        </p>
+
+        <br>
+
+        <p>
+            O trabalho pericial tem como objetivo fornecer informações técnicas
+            que possam auxiliar na análise de documentos e questões relacionadas
+            à autenticidade ou autoria gráfica.
+        </p>
+
+        <br>
+
+        <p>
+            Atendimento para demandas <strong>judiciais e extrajudiciais</strong>,
+            pessoas físicas, empresas e profissionais.
+        </p>
+
+    </div>
+
 </section>
 
-<section id="servicos">
-    <h2>Serviços</h2>
 
-    <div class="servicos">
+<section id="servicos" class="destaques">
+
+    <div class="titulo">
+        <span>Atuação</span>
+        <h2>Serviços</h2>
+    </div>
+
+    <div class="cards">
 
         <div class="card">
+            <div class="numero">01</div>
             <h3>Perícia Grafotécnica</h3>
             <p>
-                Análise técnica de assinaturas e manuscritos para verificar
-                autenticidade, autoria e possíveis divergências.
+                Análise técnica de assinaturas e manuscritos,
+                incluindo comparação entre padrões gráficos.
             </p>
         </div>
 
         <div class="card">
+            <div class="numero">02</div>
             <h3>Documentoscopia</h3>
             <p>
-                Exame técnico de documentos e seus elementos para auxiliar
-                na identificação de possíveis alterações ou irregularidades.
+                Exame técnico de documentos e seus elementos,
+                buscando identificar alterações ou inconsistências.
             </p>
         </div>
 
         <div class="card">
+            <div class="numero">03</div>
+            <h3>Análise de Assinaturas</h3>
+            <p>
+                Estudo comparativo de assinaturas questionadas
+                em relação aos padrões apresentados.
+            </p>
+        </div>
+
+        <div class="card">
+            <div class="numero">04</div>
             <h3>Assistência Técnica</h3>
             <p>
                 Apoio técnico em demandas judiciais e extrajudiciais
-                relacionadas à análise de documentos e escritas.
-            </p>
-        </div>
-
-        <div class="card">
-            <h3>Análise de Assinaturas</h3>
-            <p>
-                Estudo comparativo entre padrões gráficos e assinaturas
-                questionadas.
+                relacionadas à análise pericial.
             </p>
         </div>
 
     </div>
+
 </section>
 
+
+<section id="como" class="como-funciona">
+
+    <div class="titulo">
+        <span>Atendimento</span>
+        <h2>Como funciona</h2>
+    </div>
+
+    <div class="etapas">
+
+        <div class="etapa">
+            <div class="numero">01</div>
+            <h3>Contato</h3>
+            <p>
+                Entre em contato para apresentar sua necessidade
+                e esclarecer suas dúvidas.
+            </p>
+        </div>
+
+        <div class="etapa">
+            <div class="numero">02</div>
+            <h3>Análise inicial</h3>
+            <p>
+                São avaliadas as informações e os documentos
+                disponíveis para o caso.
+            </p>
+        </div>
+
+        <div class="etapa">
+            <div class="numero">03</div>
+            <h3>Proposta</h3>
+            <p>
+                Após a avaliação inicial, são apresentadas
+                as condições e informações necessárias.
+            </p>
+        </div>
+
+        <div class="etapa">
+            <div class="numero">04</div>
+            <h3>Atendimento</h3>
+            <p>
+                O trabalho é realizado de acordo com a
+                necessidade apresentada e o serviço contratado.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+
 <section id="contato" class="contato">
-    <h2>Entre em contato</h2>
+
+    <div class="titulo">
+        <span>Fale comigo</span>
+        <h2>Solicite um atendimento</h2>
+    </div>
 
     <p>
-        Precisa de uma análise ou deseja saber mais sobre os serviços?
+        Precisa de uma análise ou deseja saber mais sobre a perícia?
     </p>
 
-    <a class="botao" href="https://wa.me/5547992453167" target="_blank">
+    <p>
+        <strong>Blumenau – Santa Catarina</strong>
+    </p>
+
+    <a class="botao"
+       href="https://wa.me/5547992453167"
+       target="_blank">
         WhatsApp: (47) 99245-3167
     </a>
 
-    <p style="margin-top:20px;">
-        Blumenau – Santa Catarina
-    </p>
 </section>
 
+
+<a class="whatsapp-fixo"
+   href="https://wa.me/5547992453167"
+   target="_blank"
+   title="Fale pelo WhatsApp">
+    ☎️
+</a>
+
+
 <footer>
-    © 2026 Vanessa Cristina – Expert em Perícias
+
+    <p>
+        <strong>Vanessa Cristina – Expert em Perícias</strong>
+    </p>
+
+    <p>
+        Perícia Grafotécnica e Documentoscopia
+    </p>
+
+    <p>
+        Blumenau – SC
+    </p>
+
+    <br>
+
+    <p>
+        © 2026 Vanessa Cristina. Todos os direitos reservados.
+    </p>
+
 </footer>
 
 </body>
